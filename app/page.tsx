@@ -1,7 +1,6 @@
-// import Task from "./task/page" ;
 import dynamic from "next/dynamic";
 import axios from "axios" 
-const Task = dynamic(() => import("./task/page"), {
+const Task = dynamic(() => import("./task/task"), {
   ssr: false,
 });
 const getTasks = async (id) => {

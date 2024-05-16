@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/navbar";
-// import Input from  "./../components/input/input" ;
 import { useForm, SubmitHandler } from "react-hook-form";
 import Box from '@mui/material/Box';
 import { TextField , Button , Checkbox } from '@mui/material';
@@ -67,7 +66,6 @@ const updateTaskData = async (data ) => {
  try{   
    setLoading(true)
   const updateData = await updateTask( taskId  , data); 
-  // console.log(updateData)
   getAllTask()
   reset();
   handleClose()}catch (error){
