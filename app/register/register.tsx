@@ -120,7 +120,7 @@ function Register() {
             </Button>
             <Grid container>
               <Grid item>
-                <Link href="/pages/login" variant="body2">
+                <Link href="/pages/login">
                   {"already have account"}
                 </Link>
               </Grid>
