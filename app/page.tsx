@@ -1,5 +1,9 @@
-import Task from "./task/page" ;
+// import Task from "./task/page" ;
+import dynamic from "next/dynamic";
 import axios from "axios" 
+const Task = dynamic(() => import("./task/page"), {
+  ssr: false,
+});
 const getTasks = async (id) => {
       console.log(id)
       const data =  await  axios.get(`api/blogs/${id}`)  
