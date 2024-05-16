@@ -22,7 +22,7 @@ import {sweetAlert} from "../../app/helper/helper"
       <AppBar position="static"  >
         <Toolbar>
           <Typography variant="h6" component="div" className="cursor-pointer" sx={{ flexGrow: 1 }}>
-          {userData.user_name}
+          {userData?.user_name}
           </Typography>
           <Button color="inherit" onClick={ () => logOut() }>LogOut</Button>
         </Toolbar>
